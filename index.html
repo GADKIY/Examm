@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/lightgallery.css">
     <link rel="stylesheet" href="assets/css/lg-zoom.css">
     <link rel="stylesheet" href="assets/css/lg-thumbnail.css">
+    <link rel="stylesheet" href="assets/js/plugins/leaflet/leaflet.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Monticello</title>
 </head>
@@ -49,22 +50,22 @@
                 </nav>
                 <div class="header_links-menu">
                     <ul class="header_links">
-                        <li class="header_links-item">
-                            <a href="#">
+                        <li class="header_links-item" target="_blank" rel="nofollow" title="facebook">
+                            <a href="https://www.facebook.com/">
                                 <svg>
                                     <use xlink:href="assets/images/svg/sprite.svg#facebook"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="header_links-item">
-                            <a href="#">
+                        <li class="header_links-item" target="_blank" rel="nofollow" title="twitter">
+                            <a href="https://twitter.com/?lang=ru">
                                 <svg>
                                     <use xlink:href="assets/images/svg/sprite.svg#twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="header_links-item">
-                            <a href="#">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" title="instagram">
                                 <svg>
                                     <use xlink:href="assets/images/svg/sprite.svg#instagram"></use>
                                 </svg>
@@ -350,13 +351,19 @@
             <div id="map">
                 
             </div>
+            
         </section>
+
 
     </main>
     <footer>
 
     </footer>
 
+
+
+
+    <script src="assets/js/plugins/leaflet/leaflet.js"></script>
     <script src="assets/js/plugins/intersection-observer.js"></script>
     <script src="assets/js/plugins/lazyload.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
