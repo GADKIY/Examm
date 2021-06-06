@@ -1,1 +1,2 @@
-# Examm
+# Exam
+Simple website with js

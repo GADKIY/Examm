@@ -1,0 +1,58 @@
+@font-face {
+	font-family: 'gothambold1';
+	src: url('../fonts/gothambold1.eot');
+	src: local('gothambold1'), url('../fonts/gothambold1.woff') format('woff'), url('../fonts/gothambold1.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'GothamBook';
+	src: url('../fonts/GothamBook.eot');
+	src: local('GothamBook'), url('../fonts/GothamBook.woff') format('woff'), url('../fonts/GothamBook.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'gotham-medium-webfont';
+	src: url('../fonts/gotham-medium-webfont.eot');
+	src: local('gotham-medium-webfont'), url('../fonts/gotham-medium-webfont.woff') format('woff'), url('../fonts/gotham-medium-webfont.woff2') format('woff2');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_5903">Text with this font applied</p> */
+.fontsforweb_fontid_5903 {
+	font-family: 'gothambold1' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
+
+
+/* open-sans-regular - latin */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/open-sans-v20-latin-regular.eot');
+	/* IE9 Compat Modes */
+	src: local(''),
+		url('../fonts/open-sans-v20-latin-regular.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */
+		url('../fonts/open-sans-v20-latin-regular.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('../fonts/open-sans-v20-latin-regular.woff') format('woff'),
+		
+}
+
+/* open-sans-italic - latin */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url('../fonts/open-sans-v20-latin-italic.eot');
+	/* IE9 Compat Modes */
+	src: local(''),
+		url('../fonts/open-sans-v20-latin-italic.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */
+		url('../fonts/open-sans-v20-latin-italic.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('../fonts/open-sans-v20-latin-italic.woff') format('woff'),
+		
+		
+	/* Legacy iOS */
+}

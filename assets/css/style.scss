@@ -1,0 +1,511 @@
+@import 'reset';
+
+$font-color-balck: #2c4058;
+$font-color-balck2: #4b5562;
+$font-color-white: #fff;
+$font-color-blue: #55b7ff;
+
+$root-font-size: 16px;
+
+@function rem($size) {
+    @return $size / $root-font-size * 1rem;
+}
+
+
+.container{
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: rem(44px);
+    text-transform: uppercase;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    z-index: 1;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_logo{
+        svg{
+            fill: $font-color-white;
+            width: 240px;
+        }
+    }
+    &_list{
+        &-item{
+            display: inline-block;
+            margin-right: 68px;
+            text-transform: uppercase;
+            a{
+                font-family: 'GothamBook';
+                color: $font-color-white;
+                font-size: rem(14px);
+
+            }
+            .round{
+                display: inline-block;
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                border: 1px solid $font-color-white;
+                margin-right: 14px;
+                &:active{
+                    background-color: $font-color-white;
+                }
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    &_links-item{
+        display: inline-block;
+        border: 1px solid rgba($font-color-white, $alpha: .7);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        margin-right: 20px;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        svg{
+            fill: $font-color-white;
+            transform: translateY(60%);
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+.header_slider{
+    // height: 100vh;
+    max-height: 800px;
+    &-item{
+        background: url('../images/sliderbackground.png') center center / cover no-repeat;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-top: 370px;
+        position: relative;
+        
+        &-title{
+            color: $font-color-white;
+            text-transform: uppercase;
+            font-family: 'gothambold1';
+            font-size: rem(80px);
+            margin-bottom: 40px;
+        }
+        &-description{
+            text-transform: uppercase;
+            font-size: rem(18px);
+            color: $font-color-white;
+            font-family: 'GothamBook';
+            font-weight: 350;
+            letter-spacing: 2.5px;
+        }
+    }
+}
+
+.lSSlideOuter .lSPager.lSpg{
+    position: absolute;
+    top: 35%;
+    right: 2%;
+    >li{
+        display: block;
+        margin-bottom: 40px;
+        >a{
+            border: 1px solid $font-color-white;
+            background: transparent;
+            width: 9px;
+            height: 9px;
+            &:active{
+                background: $font-color-white;
+            }
+            &:hover{
+                background: $font-color-white;
+            }
+            &:focus{
+                background: $font-color-white;
+            }
+        }
+        &.active a{
+            background: $font-color-white;
+        }
+
+    }
+    
+}
+
+.projects {
+    padding: 140px 0 140px;
+    text-align: center;
+    overflow-x: hidden;
+    &_title{
+        font-family: 'gothambold1';
+        color: $font-color-balck;
+        position: relative;
+        margin-bottom: 170px;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: $font-color-balck;
+            top: -40px;
+            left: 45%;
+        }
+    }
+    &_example{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 70px;
+        
+        &:nth-of-type(1) {
+            margin-bottom: 140px;
+        }
+        &.reverse{
+            flex-direction: row-reverse;
+            padding-top: 0;
+        }
+        &-title1{
+            font-family: 'GothamBook';
+            font-size: rem(22px);
+            color: $font-color-balck;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+        }
+        &-title{
+            font-family: 'gothambold1';
+            color: $font-color-balck;
+            margin-bottom: 40px;
+        }
+        &-description{
+            font-size: rem(18px);
+            color: $font-color-balck;
+            font-family: 'Open Sans';
+            line-height: 30px;
+            margin-bottom: 35px;
+        }
+
+    }
+    &_text-wrap{
+        width: calc(46% - 10px);
+        text-align: left;   
+        padding: 40px 0 0 60px;
+        &.reverse{
+            padding: 40px 30px 0 0;
+        }
+    }
+    &_image-wrap{
+        width: calc(54% - 10px);
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #55b7ff;
+            right: calc(45%);
+            bottom: 15%;
+            z-index: -1;
+        }
+        &.reverse::before{
+            left: calc(45%);
+            background-color: #7e5aff;
+        }
+    }
+    &_location-link{
+        font-size: rem(18px);
+        color: $font-color-balck;
+        font-family: 'Open Sans';
+        font-style: italic;
+        svg{
+            width: 16px;
+            height: 16px;
+            fill: $font-color-balck;
+        }
+    }
+}
+
+.btn-more {
+    margin-bottom: 60px;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    max-width: 190px;
+    height: 50px;
+    border: 1px solid $font-color-balck;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'GothamBook';
+    font-size: rem(14px);
+    line-height: 48px;
+    color: $font-color-balck;
+    transition: all .4s ease-in-out;
+    &:hover{
+        color: $font-color-white;
+        background-color: $font-color-balck;
+
+    }
+}
+
+.news{
+    background:  center center / cover no-repeat;
+    padding-top: 180px;
+    text-align: center;
+    padding-bottom: 200px;
+    position: relative;
+    &_slide-controls{
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba($color: $font-color-white, $alpha: .6);
+        border-radius: 50%;
+        opacity: .5;
+        transition: all .2s;
+        &:hover{
+            opacity: 1;
+        }
+        &.prev{
+            left: 2%;
+            top: 54%;
+            &:before{
+                content: '';
+                position: absolute;
+                display: block;
+                width: 5px;
+                height: 5px;
+                border-left: 1px solid rgba($color: $font-color-white, $alpha: .6);
+                border-bottom: 1px solid rgba($color: $font-color-white, $alpha: .6);
+                transform: rotate(45deg);
+                top: 43%;
+                left: 46%;
+            }
+        }
+        &.next{
+            right: 2%;
+            top: 54%;
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 5px;
+                height: 5px;
+                border-left: 1px solid $font-color-white;
+                border-bottom: 1px solid $font-color-white;
+                transform: rotate(-135deg);
+                opacity: .5;
+                top: 43%;
+                left: 40%;                
+            }
+        }
+
+    }
+    &_title{
+        color: $font-color-white;
+        font-family: 'gotham-medium-webfont';
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 100px;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: $font-color-white;
+            top: -40px;
+            left: 45%;
+        }
+    }
+    &_list-item{
+        height: 514px;
+        width: 100%;
+        max-width: 370px;
+        background-color: #fff;
+        position: relative;
+        &_link{
+            display: block;
+            height: 240px;
+            margin-bottom: 22px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: rgb(255, 255, 255);
+                background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759103641) 87%);
+                background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759103641) 87%);
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759103641) 87%);
+                
+                
+            }
+        }
+        &_text-wrap{
+            text-align: left;
+            padding-left: 22px;
+            padding: 0 22px 0 15px;
+        }
+        &_title{
+            text-transform: uppercase;
+            font-size: rem(22px);
+            color: $font-color-balck;
+            font-family: 'gothambold1';
+            line-height: 30px;
+        }
+        &-description{
+            height: 70px;
+            overflow-y: hidden;
+            font-size: rem(18px);
+            font-family: 'Open Sans';
+            line-height: 30px;
+            color: $font-color-balck2;
+            position: relative;
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background: rgb(255, 255, 255);
+                background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759103641) 87%);
+                background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759103641) 87%);
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759103641) 87%);
+                
+            }
+        }
+        &-author-wrap{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 22px;
+            bottom: 30px;
+            img{
+                width: 62px;
+                height: 62px;
+                margin-right: 20px;
+            }
+        }
+        &-author{
+            font-size: rem(18px);
+            text-transform: uppercase;
+            font-family: 'GothamBook';
+            color: $font-color-balck;
+            margin-bottom: 14px;
+        }
+        &-date{
+            color: $font-color-blue;
+            font-family: 'GothamBook';
+            font-size: rem(14px);
+        }
+    }
+    .lSSlideOuter{
+        overflow: visible;
+        position: relative;
+    }
+    .lSSlideOuter .lSPager.lSpg {
+        position: absolute;
+        top: 110%;
+        right: 36%;
+
+        >li {
+            display: inline-block;
+            margin-right: 40px;
+
+            >a {
+                border: 1px solid $font-color-white;
+                background: transparent;
+                width: 9px;
+                height: 9px;
+
+                &:active {
+                    background: $font-color-white;
+                }
+
+                &:hover {
+                    background: $font-color-white;
+                }
+
+                &:focus {
+                    background: $font-color-white;
+                }
+            }
+
+            &.active a {
+                background: $font-color-white;
+            }
+
+        }
+
+    }
+}
+
+.gallery{
+    padding: 180px 0 140px 0;
+    text-align: center;
+    &_title{
+        color: $font-color-balck;
+        margin-bottom: 100px;
+        position: relative;
+        font-family: 'gotham-medium-webfont';
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: $font-color-balck;
+            top: -40px;
+            left: 45%;            
+        }
+    }
+    &_wrap{
+        display: flex;
+        // max-height: 440px;
+        gap: 10px;
+        margin-bottom: 60px;
+
+    }
+    &_inner{
+        width: 100%;
+        max-width: 580px;
+        &_second{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            a{                
+                max-width: 285px;
+                
+            }
+        }
+    }
+    .btn-see{
+        margin: 0 auto;
+    }
+}
+
+#map{
+    height: 700px;
+    width: 100%;
+}
