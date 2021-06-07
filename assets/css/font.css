@@ -31,7 +31,7 @@
 	src: url('../fonts/open-sans-v20-latin-regular.eot');
 	/* IE9 Compat Modes */
 	src: local(''),
-		url('../fonts/open-sans-v20-latin-regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/open-sans-v20-latin-regular.eot') format('embedded-opentype'),
 		/* IE6-IE8 */
 		url('../fonts/open-sans-v20-latin-regular.woff2') format('woff2'),
 		/* Super Modern Browsers */
@@ -47,7 +47,7 @@
 	src: url('../fonts/open-sans-v20-latin-italic.eot');
 	/* IE9 Compat Modes */
 	src: local(''),
-		url('../fonts/open-sans-v20-latin-italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/open-sans-v20-latin-italic.eot') format('embedded-opentype'),
 		/* IE6-IE8 */
 		url('../fonts/open-sans-v20-latin-italic.woff2') format('woff2'),
 		/* Super Modern Browsers */

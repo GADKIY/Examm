@@ -30,16 +30,18 @@ header{
     z-index: 1;
 }
 
+
+.logo{
+    svg{
+        fill: $font-color-white;
+        width: 240px;
+    }
+}
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &_logo{
-        svg{
-            fill: $font-color-white;
-            width: 240px;
-        }
-    }
+    
     &_list{
         &-item{
             display: inline-block;
@@ -377,7 +379,7 @@ header{
             height: 70px;
             overflow-y: hidden;
             font-size: rem(18px);
-            font-family: 'Open Sans';
+            font-family: 'Open Sans', sans-serif;
             line-height: 30px;
             color: $font-color-balck2;
             position: relative;
@@ -508,4 +510,31 @@ header{
 #map{
     height: 700px;
     width: 100%;
+}
+
+footer{
+    // height: 524px;
+    background: center center / cover no-repeat;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.footer{
+    &_wrapper{
+        width: 100%;
+        max-width: 770px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_copy{
+        color: $font-color-white;
+        font-family: 'GothamBook';
+        font-size: rem(14px);
+        & span:nth-child(2){
+            margin: 10px;
+            font-size: rem(20px);
+        }
+    }
 }
