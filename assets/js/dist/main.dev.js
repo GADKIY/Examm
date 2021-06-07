@@ -96,6 +96,10 @@ $(function () {
       $("div.header").removeClass("mobile-header");
     }
   });
+  $(".hamburger, #menu_shadow").on('click', function () {
+    $(".hamburger").toggleClass("is-active");
+    $("body").toggleClass("open");
+  });
 });
 /* lightGallery(document.getElementById('lightgallery'), {
     plugins: [lgZoom, lgThumbnail],
