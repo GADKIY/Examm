@@ -21,7 +21,7 @@ $root-font-size: 16px;
 .title{
     font-size: rem(44px);
     text-transform: uppercase;
-    font-family: 'gotham-medium-webfont';
+    font-family: 'gotham-medium-webfont', sans-serif;
     font-weight: 400;
     color: $font-color-balck;
     position: relative;
@@ -122,7 +122,7 @@ header{
                 }
             }
             a{
-                font-family: 'GothamBook';
+                font-family: 'GothamBook', sans-serif;
                 color: $font-color-white;
                 font-size: rem(14px);
 
@@ -157,7 +157,7 @@ header{
         &-title{
             color: $font-color-white;
             text-transform: uppercase;
-            font-family: 'gothambold1';
+            font-family: 'gothambold1', sans-serif;
             font-size: rem(80px);
             margin-bottom: 40px;
         }
@@ -165,7 +165,7 @@ header{
             text-transform: uppercase;
             font-size: rem(18px);
             color: $font-color-white;
-            font-family: 'GothamBook';
+            font-family: 'GothamBook', sans-serif;
             font-weight: 350;
             letter-spacing: 2.5px;
             margin-bottom: 150px;
@@ -221,7 +221,7 @@ header{
     text-align: center;
     overflow-x: hidden;
     &_title{
-        font-family: 'gothambold1';
+        font-family: 'gothambold1', sans-serif;
         color: $font-color-balck;
         margin-bottom: 100px;
     }
@@ -238,14 +238,14 @@ header{
             padding-top: 0;
         }
         &-title1{
-            font-family: 'GothamBook';
+            font-family: 'GothamBook', sans-serif;
             font-size: rem(22px);
             color: $font-color-balck;
             margin-bottom: 14px;
             text-transform: uppercase;
         }
         &-title{
-            font-family: 'gothambold1';
+            font-family: 'gothambold1', sans-serif;
             color: $font-color-balck;
             margin-bottom: 40px;
             font-size: rem(44px);
@@ -254,7 +254,7 @@ header{
         &-description{
             font-size: rem(18px);
             color: $font-color-balck;
-            font-family: 'Open Sans';
+            font-family: 'Open Sans', sans-serif;
             line-height: 30px;
             margin-bottom: 35px;
         }
@@ -289,7 +289,7 @@ header{
     &_location-link{
         font-size: rem(18px);
         color: $font-color-balck;
-        font-family: 'Open Sans';
+        font-family: 'Open Sans', sans-serif;
         font-style: italic;
         svg{
             width: 16px;
@@ -311,7 +311,7 @@ header{
     border: 1px solid $font-color-balck;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'GothamBook';
+    font-family: 'GothamBook', sans-serif;
     font-size: rem(14px);
     line-height: 48px;
     color: $font-color-balck;
@@ -418,7 +418,7 @@ header{
             text-transform: uppercase;
             font-size: rem(22px);
             color: $font-color-balck;
-            font-family: 'gothambold1';
+            font-family: 'gothambold1', sans-serif;
             line-height: 30px;
         }
         &-description{
@@ -460,13 +460,13 @@ header{
         &-author{
             font-size: rem(18px);
             text-transform: uppercase;
-            font-family: 'GothamBook';
+            font-family: 'GothamBook', sans-serif;
             color: $font-color-balck;
             margin-bottom: 14px;
         }
         &-date{
             color: $font-color-blue;
-            font-family: 'GothamBook';
+            font-family: 'GothamBook', sans-serif;
             font-size: rem(14px);
         }
     }
@@ -519,7 +519,7 @@ header{
         color: $font-color-balck;
         margin-bottom: 100px;
         position: relative;
-        font-family: 'gotham-medium-webfont';
+        font-family: 'gotham-medium-webfont', sans-serif;
     }
     &_wrap{
         display: flex;
@@ -566,7 +566,7 @@ header{
     font-size: 24px;
     opacity: 0;
     transition: all .1s;
-    font-family: "GothamBook";
+    font-family: "GothamBook", sans-serif;
     text-transform: uppercase;
     &:hover {
         opacity: 1;
@@ -594,7 +594,7 @@ footer{
     }
     &_copy{
         color: $font-color-white;
-        font-family: 'GothamBook';
+        font-family: 'GothamBook', sans-serif;
         font-size: rem(14px);
         & span:nth-child(2){
             margin: 10px;
@@ -636,7 +636,7 @@ footer{
             border: transparent;
             border-bottom: 1px solid #d5d9de;
             color: #d5d9de;
-            font-family: 'GothamBook';
+            font-family: 'GothamBook', sans-serif;
             font-size: rem(18px);
             height: 38px;
             padding-bottom: 12px;
@@ -653,7 +653,7 @@ footer{
     }
     &_list-item{
         color: $font-color-balck;
-        font-family: 'GothamBook',
+        font-family: 'GothamBook', sans-serif,
         sans-serif;
         font-size: rem(18px);
         margin-bottom: 42px;

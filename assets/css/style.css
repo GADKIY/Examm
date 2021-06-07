@@ -32,7 +32,7 @@ img {
 .title {
   font-size: 2.75rem;
   text-transform: uppercase;
-  font-family: "gotham-medium-webfont";
+  font-family: "gotham-medium-webfont", sans-serif;
   font-weight: 400;
   color: #2c4058;
   position: relative;
@@ -128,7 +128,7 @@ header {
   background-color: #fff;
 }
 .header_list-item a {
-  font-family: "GothamBook";
+  font-family: "GothamBook", sans-serif;
   color: #fff;
   font-size: 0.875rem;
 }
@@ -158,7 +158,7 @@ header {
 .header_slider-item-title {
   color: #fff;
   text-transform: uppercase;
-  font-family: "gothambold1";
+  font-family: "gothambold1", sans-serif;
   font-size: 5rem;
   margin-bottom: 40px;
 }
@@ -166,7 +166,7 @@ header {
   text-transform: uppercase;
   font-size: 1.125rem;
   color: #fff;
-  font-family: "GothamBook";
+  font-family: "GothamBook", sans-serif;
   font-weight: 350;
   letter-spacing: 2.5px;
   margin-bottom: 150px;
@@ -219,7 +219,7 @@ header {
   overflow-x: hidden;
 }
 .projects_title {
-  font-family: "gothambold1";
+  font-family: "gothambold1", sans-serif;
   color: #2c4058;
   margin-bottom: 100px;
 }
@@ -236,14 +236,14 @@ header {
   padding-top: 0;
 }
 .projects_example-title1 {
-  font-family: "GothamBook";
+  font-family: "GothamBook", sans-serif;
   font-size: 1.375rem;
   color: #2c4058;
   margin-bottom: 14px;
   text-transform: uppercase;
 }
 .projects_example-title {
-  font-family: "gothambold1";
+  font-family: "gothambold1", sans-serif;
   color: #2c4058;
   margin-bottom: 40px;
   font-size: 2.75rem;
@@ -252,7 +252,7 @@ header {
 .projects_example-description {
   font-size: 1.125rem;
   color: #2c4058;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   line-height: 30px;
   margin-bottom: 35px;
 }
@@ -285,7 +285,7 @@ header {
 .projects_location-link {
   font-size: 1.125rem;
   color: #2c4058;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: italic;
 }
 .projects_location-link svg {
@@ -306,7 +306,7 @@ header {
   border: 1px solid #2c4058;
   text-align: center;
   text-transform: uppercase;
-  font-family: "GothamBook";
+  font-family: "GothamBook", sans-serif;
   font-size: 0.875rem;
   line-height: 48px;
   color: #2c4058;
@@ -410,7 +410,7 @@ header {
   text-transform: uppercase;
   font-size: 1.375rem;
   color: #2c4058;
-  font-family: "gothambold1";
+  font-family: "gothambold1", sans-serif;
   line-height: 30px;
 }
 .news_list-item-description {
@@ -452,13 +452,13 @@ header {
 .news_list-item-author {
   font-size: 1.125rem;
   text-transform: uppercase;
-  font-family: "GothamBook";
+  font-family: "GothamBook", sans-serif;
   color: #2c4058;
   margin-bottom: 14px;
 }
 .news_list-item-date {
   color: #55b7ff;
-  font-family: "GothamBook";
+  font-family: "GothamBook", sans-serif;
   font-size: 0.875rem;
 }
 .news .lSSlideOuter {
@@ -502,7 +502,7 @@ header {
   color: #2c4058;
   margin-bottom: 100px;
   position: relative;
-  font-family: "gotham-medium-webfont";
+  font-family: "gotham-medium-webfont", sans-serif;
 }
 .gallery_wrap {
   display: flex;
@@ -544,7 +544,7 @@ header {
   font-size: 24px;
   opacity: 0;
   transition: all 0.1s;
-  font-family: "GothamBook";
+  font-family: "GothamBook", sans-serif;
   text-transform: uppercase;
 }
 #map_link:hover {
@@ -570,7 +570,7 @@ footer {
 }
 .footer_copy {
   color: #fff;
-  font-family: "GothamBook";
+  font-family: "GothamBook", sans-serif;
   font-size: 0.875rem;
 }
 .footer_copy span:nth-child(2) {
@@ -613,7 +613,7 @@ footer {
   border: transparent;
   border-bottom: 1px solid #d5d9de;
   color: #d5d9de;
-  font-family: "GothamBook";
+  font-family: "GothamBook", sans-serif;
   font-size: 1.125rem;
   height: 38px;
   padding-bottom: 12px;
@@ -629,7 +629,7 @@ footer {
 }
 .contact-card_list-item {
   color: #2c4058;
-  font-family: "GothamBook", sans-serif;
+  font-family: "GothamBook", sans-serif, sans-serif;
   font-size: 1.125rem;
   margin-bottom: 42px;
 }
