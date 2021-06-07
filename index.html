@@ -17,65 +17,61 @@
     <main>
         <header>
             <div class="container header">
-                <div class="header_logo logo">
+                <a class="header_logo logo" href="#">
                     <svg>
                         <use xlink:href="assets/images/svg/sprite.svg#page_logo"></use>
                     </svg>
-                </div>
+                </a>
                 <nav>
-                    <div class="header_menu">
-                        <ul class="header_list">
-                            <li class="header_list-item">
-                                <a href="#">
-                                    <span class="round"></span><span>About us</span>
-                                </a>
-                            </li>
-                            <li class="header_list-item">
-                                <a href="#">
-                                    <span class="round"></span><span>Projects</span>
-                                </a>
-                            </li>
-                            <li class="header_list-item">
-                                <a href="#">
-                                    <span class="round"></span><span>News</span>
-                                </a>
-                            </li>
-                            <li class="header_list-item">
-                                <a href="#">
-                                    <span class="round"></span><span>Contact</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="header_links-menu links">
-                    <ul class="header_links">
-                        <li class="header_links-item" target="_blank" rel="noreferrer nofollow" title="facebook">
-                            <a href="https://www.facebook.com/">
-                                <svg>
-                                    <use xlink:href="assets/images/svg/sprite.svg#facebook"></use>
-                                </svg>
+                    <ul class="header_list">
+                        <li class="header_list-item">
+                            <a class="scroll" href="#header_slider">
+                                <span class="round"></span><span>About us</span>
                             </a>
                         </li>
-                        <li class="header_links-item" target="_blank" rel="noreferrer nofollow" title="twitter">
-                            <a href="https://twitter.com/?lang=ru">
-                                <svg>
-                                    <use xlink:href="assets/images/svg/sprite.svg#twitter"></use>
-                                </svg>
+                        <li class="header_list-item">
+                            <a class="scroll" href="#projects">
+                                <span class="round"></span><span>Projects</span>
                             </a>
                         </li>
-                        <li class="header_links-item">
-                            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer nofollow" title="instagram">
-                                <svg>
-                                    <use xlink:href="assets/images/svg/sprite.svg#instagram"></use>
-                                </svg>
+                        <li class="header_list-item">
+                            <a class="scroll" href="#news">
+                                <span class="round"></span><span>News</span>
                             </a>
-                        </li>                    
+                        </li>
+                        <li class="header_list-item">
+                            <a class="scroll" href="#contact">
+                                <span class="round"></span><span>Contact</span>
+                            </a>
+                        </li>
                     </ul>
-                </div>
+                </nav>
+                <ul class="links">
+                    <li class="links-item" target="_blank" rel="noreferrer nofollow" title="facebook">
+                        <a href="https://www.facebook.com/">
+                            <svg>
+                                <use xlink:href="assets/images/svg/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="links-item" target="_blank" rel="noreferrer nofollow" title="twitter">
+                        <a href="https://twitter.com/?lang=ru">
+                            <svg>
+                                <use xlink:href="assets/images/svg/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="links-item">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer nofollow" title="instagram">
+                            <svg>
+                                <use xlink:href="assets/images/svg/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>                    
+                </ul>
             </div>
         </header>
-        <section class="header_slider">
+        <section id="header_slider" class="header_slider">
             <ul id="lightSlider">
                 <li class="header_slider-item lazy-bg" data-src="assets/images/sliderbackground.png">
                     <h2 class="header_slider-item-title">
@@ -84,6 +80,7 @@
                     <p class="header_slider-item-description">
                         We make the world`s beautiful every day
                     </p>
+                    <a class="scroll scroll-round" href="#projects"></a>
                 </li>
                 <li class="header_slider-item lazy-bg" data-src="assets/images/sliderbackground.png">
                     <h2 class="header_slider-item-title">
@@ -92,6 +89,7 @@
                     <p class="header_slider-item-description">
                         We make the world`s beautiful every day
                     </p>
+                    <a class="scroll scroll-round" href="#projects"></a>
                 </li>
                 <li class="header_slider-item lazy-bg" data-src="assets/images/sliderbackground.png">
                     <h2 class="header_slider-item-title">
@@ -100,6 +98,7 @@
                     <p class="header_slider-item-description">
                         We make the world`s beautiful every day
                     </p>
+                    <a class="scroll scroll-round" href="#projects"></a>
                 </li>
                 <li class="header_slider-item lazy-bg" data-src="assets/images/sliderbackground.png">
                     <h2 class="header_slider-item-title">
@@ -108,6 +107,7 @@
                     <p class="header_slider-item-description">
                         We make the world`s beautiful every day
                     </p>
+                    <a class="scroll scroll-round" href="#projects"></a>
                 </li>
                 <li class="header_slider-item lazy-bg" data-src="assets/images/sliderbackground.png">
                     <h2 class="header_slider-item-title">
@@ -116,10 +116,11 @@
                     <p class="header_slider-item-description">
                         We make the world`s beautiful every day
                     </p>
+                    <a class="scroll scroll-round" href="#projects"></a>
                 </li>
             </ul>
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="container">
                 <h2 class="projects_title title">
                     What we do
@@ -132,7 +133,7 @@
                         <div class="projects_example-title1">
                             One world
                         </div>
-                        <h4 class="projects_example-title title">
+                        <h4 class="projects_example-title">
                             Trade center
                         </h4>
                         <p class="projects_example-description">
@@ -160,7 +161,7 @@
                         <div class="projects_example-title1">
                             International
                         </div>
-                        <h4 class="projects_example-title title">
+                        <h4 class="projects_example-title">
                             Commerce Centere
                         </h4>
                         <p class="projects_example-description">
@@ -183,7 +184,7 @@
             </div>
 
         </section>
-        <section class="news lazy-bg" data-src="assets/images/newsbackground.png">
+        <section id="news" class="news lazy-bg" data-src="assets/images/newsbackground.png">
             <div class="container">
                 <a href="javascript:void(0)" class="news_slide-controls prev" id="prevSlide"></a>
                 <a href="javascript:void(0)" class="news_slide-controls next" id="nextSlide"></a>
@@ -350,7 +351,9 @@
             </div>
         </section>
         <div id="map">
-                
+            <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-src="assets/images/vHeMBiZ.png" alt="map" id="map_pic">
+            <a href="javascript:void(0)" id="map_link">Click to watch</a>
         </div> 
                    
 
@@ -358,11 +361,11 @@
     <footer class="footer lazy-bg" data-src="assets/images/backgroundfooter.png">
         <div class="footer_wrapper">
             <div class="footer_logo-wrapper">
-                <div class="footer_logo logo">
+                <a class="footer_logo logo" href="#">
                     <svg>
                         <use xlink:href="assets/images/svg/sprite.svg#page_logo"></use>
                     </svg>
-                </div>
+                </a>
                 <div class="footer_copy">
                     <span>
                         Copyrights &copy; 2017 Monticello
@@ -373,23 +376,22 @@
                     </span> 
                 </div>
             </div>
-            <div class="header_links-menu links">
-                <ul class="header_links">
-                    <li class="header_links-item" target="_blank" rel="noreferrer nofollow" title="facebook">
+                <ul class="links">
+                    <li class="links-item" target="_blank" rel="noreferrer nofollow" title="facebook">
                         <a href="https://www.facebook.com/">
                             <svg>
                                 <use xlink:href="assets/images/svg/sprite.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="header_links-item" target="_blank" rel="noreferrer nofollow" title="twitter">
+                    <li class="links-item" target="_blank" rel="noreferrer nofollow" title="twitter">
                         <a href="https://twitter.com/?lang=ru">
                             <svg>
                                 <use xlink:href="assets/images/svg/sprite.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="header_links-item">
+                    <li class="links-item">
                         <a href="https://www.instagram.com/" target="_blank" rel="noreferrer nofollow" title="instagram">
                             <svg>
                                 <use xlink:href="assets/images/svg/sprite.svg#instagram"></use>
@@ -398,8 +400,7 @@
                     </li>                    
                 </ul>
             </div>
-        </div>
-        <div class="contact-card lazy-bg" data-src="assets/images/cardbackground.png">
+        <div id="contact" class="contact-card lazy-bg" data-src="assets/images/cardbackground.png">
             <h2 class="contact-card_title title">Get in touch</h2>
             <div class="contact-card_info-wrapper">
                 <ul class="contact-card_list">

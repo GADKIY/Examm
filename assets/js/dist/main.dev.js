@@ -1,45 +1,5 @@
 "use strict";
 
-$(function () {
-  $('#lightSlider').lightSlider({
-    item: 1,
-    vertical: true,
-    verticalHeight: 800,
-    controls: false,
-    // auto: true,
-    loop: true
-  });
-  var horizontalSlider = $('#horisontal_slider').lightSlider({
-    item: 3,
-    controls: false,
-    loop: true,
-    slideMargin: 30 // auto: true,
-
-  });
-  $('#prevSlide').on('click', function () {
-    horizontalSlider.goToPrevSlide();
-  });
-  $('#nextSlide').on('click', function () {
-    horizontalSlider.goToNextSlide();
-  });
-  /*  $('#lightgallery').lightGallery({
-       plugins: [lgZoom, lgThumbnail],
-       conter: false,
-       download: false,
-       speed: 500,
-       animateThumb: false,
-       zoomFromOrigin: false,
-       allowMediaOverlap: true,
-       toggleThumb: true,
-       
-     }); */
-});
-/* lightGallery(document.getElementById('lightgallery'), {
-    plugins: [lgZoom, lgThumbnail],
-    speed: 500,
-    
-}); */
-
 function initMap() {
   map = L.map('map').setView([49.091678, 33.451642], 13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -59,4 +19,86 @@ function initMap() {
   }).addTo(map).bindPopup("\n        \n        <p>\u0414\u0430\u0430\u0430, \u043F\u0440\u0438\u043A\u043E\u043B\u044C\u043D\u044B\u0439 \u044D\u043A\u0437\u0430\u043C\u0435\u043D)</p>\n    ");
 }
 
-initMap();
+$(function () {
+  $('#lightSlider').lightSlider({
+    item: 1,
+    vertical: true,
+    verticalHeight: 800,
+    controls: false,
+    // auto: true,
+    loop: true
+  });
+  var horizontalSlider = $('#horisontal_slider').lightSlider({
+    item: 3,
+    slideMove: 1,
+    controls: false,
+    loop: true,
+    pause: 4000,
+    slideMargin: 30,
+    auto: true,
+    responsive: [{
+      breakpoint: 1050,
+      settings: {
+        item: 3,
+        slideMove: 1,
+        slideMargin: 10
+      }
+    }, {
+      breakpoint: 950,
+      settings: {
+        item: 2,
+        slideMove: 1
+      }
+    }, {
+      breakpoint: 670,
+      settings: {
+        item: 1,
+        slideMove: 1
+      }
+    }]
+  });
+  $('#prevSlide').on('click', function () {
+    horizontalSlider.goToPrevSlide();
+  });
+  $('#nextSlide').on('click', function () {
+    horizontalSlider.goToNextSlide();
+  });
+  /*  $('#lightgallery').lightGallery({
+       plugins: [lgZoom, lgThumbnail],
+       conter: false,
+       download: false,
+       speed: 500,
+       animateThumb: false,
+       zoomFromOrigin: false,
+       allowMediaOverlap: true,
+       toggleThumb: true,
+       
+     }); */
+
+  $('#map_link').on('click', function () {
+    map_link.remove();
+    map_pic.remove();
+    initMap();
+  });
+  $('a.scroll').on('click', function (e) {
+    e.preventDefault();
+    var top = $($(this).attr('href')).offset().top;
+    $('html, body').animate({
+      scrollTop: top
+    }, 400);
+  });
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() > 700) {
+      $('header').addClass('Header');
+      $("div.header").addClass("mobile-header");
+    } else {
+      $('header').removeClass('Header');
+      $("div.header").removeClass("mobile-header");
+    }
+  });
+});
+/* lightGallery(document.getElementById('lightgallery'), {
+    plugins: [lgZoom, lgThumbnail],
+    speed: 500,
+    
+}); */
