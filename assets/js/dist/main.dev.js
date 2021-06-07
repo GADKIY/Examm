@@ -57,7 +57,6 @@ function initMap() {
       iconUrl: 'assets/images/leaf-round.png'
     })
   }).addTo(map).bindPopup("\n        \n        <p>\u0414\u0430\u0430\u0430, \u043F\u0440\u0438\u043A\u043E\u043B\u044C\u043D\u044B\u0439 \u044D\u043A\u0437\u0430\u043C\u0435\u043D)</p>\n    ");
-  L.Control.remove();
 }
 
 initMap();

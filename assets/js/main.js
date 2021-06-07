@@ -64,7 +64,7 @@ function initMap() {
         
         <p>Дааа, прикольный экзамен)</p>
     `);
-    L.Control.remove();
+    
 }
 
 initMap();
