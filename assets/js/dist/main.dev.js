@@ -25,8 +25,19 @@ $(function () {
     vertical: true,
     verticalHeight: 800,
     controls: false,
+    pause: 4000,
     // auto: true,
     loop: true
+    /* responsive: [
+        {
+            breakpoint: 821,
+            settings: {
+               verticalHeight: 600,
+               
+            }
+        }
+    ] */
+
   });
   var horizontalSlider = $('#horisontal_slider').lightSlider({
     item: 3,

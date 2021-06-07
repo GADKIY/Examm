@@ -28,8 +28,18 @@ $(function(){
         vertical:true,
         verticalHeight: 800,
         controls: false,
+        pause: 4000,
         // auto: true,
-        loop: true
+        loop: true, 
+        /* responsive: [
+            {
+                breakpoint: 821,
+                settings: {
+                   verticalHeight: 600,
+                   
+                }
+            }
+        ] */
     });
 
     const horizontalSlider = $('#horisontal_slider').lightSlider({
@@ -63,7 +73,6 @@ $(function(){
                     slideMove: 1
                 }
             }
-
         ]
     });
 
