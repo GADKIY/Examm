@@ -26,7 +26,7 @@ $(function () {
     verticalHeight: 800,
     controls: false,
     pause: 4000,
-    // auto: true,
+    auto: true,
     loop: true
     /* responsive: [
         {
@@ -74,18 +74,6 @@ $(function () {
   $('#nextSlide').on('click', function () {
     horizontalSlider.goToNextSlide();
   });
-  /*  $('#lightgallery').lightGallery({
-       plugins: [lgZoom, lgThumbnail],
-       conter: false,
-       download: false,
-       speed: 500,
-       animateThumb: false,
-       zoomFromOrigin: false,
-       allowMediaOverlap: true,
-       toggleThumb: true,
-       
-     }); */
-
   $('#map_link').on('click', function () {
     map_link.remove();
     map_pic.remove();
@@ -112,8 +100,7 @@ $(function () {
     $("body").toggleClass("open");
   });
 });
-/* lightGallery(document.getElementById('lightgallery'), {
-    plugins: [lgZoom, lgThumbnail],
-    speed: 500,
-    
-}); */
+lightGallery(document.getElementById('lightgallery'), {
+  plugins: [lgZoom, lgThumbnail],
+  speed: 500
+});
