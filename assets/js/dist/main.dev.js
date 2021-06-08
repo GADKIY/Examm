@@ -101,6 +101,7 @@ $(function () {
   });
 });
 lightGallery(document.getElementById('lightgallery'), {
-  plugins: [lgZoom, lgThumbnail],
+  selector: '.item',
+  plugins: [lgZoom],
   speed: 500
 });

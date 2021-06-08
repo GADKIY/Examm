@@ -2,7 +2,7 @@
 @import 'variables';
 
 
-/* Мобильное меню и форму обратной связи я не успел сделать. С галереей у меня не получилось совсем */
+
 
 .container{
     width: 90%;
@@ -39,7 +39,7 @@
 header{
     width: 100%;
     position: fixed;
-    z-index: 9999999;
+    z-index: 10;
 }
 
 .logo{
@@ -317,10 +317,23 @@ header{
         color: $font-color-balck;
         font-family: 'Open Sans', sans-serif;
         font-style: italic;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        &:hover{
+            color: #7e5aff;
+            svg{
+                fill: #55b7ff;
+            }
+        }
         svg{
             width: 16px;
             height: 16px;
             fill: $font-color-balck;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+
         }
     }
 }
@@ -440,8 +453,8 @@ header{
                 top: 0;
                 opacity: 0;
                 background: rgb(255, 255, 255);
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, rgba(255, 255, 255, 0)), color-stop(87%, rgba(0, 0, 0, 0.6306897759103641)));
                 background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759103641) 87%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, rgba(255, 255, 255, 0)), color-stop(87%, rgba(0, 0, 0, 0.6306897759103641)));
                 background: linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759103641) 87%);
             }
             &:hover{
@@ -563,36 +576,34 @@ header{
 }
 
 .gallery{
-    padding: 180px 0 140px 0;
+    padding: 180px 0 140px;
     text-align: center;
     &_title{
-        color: $font-color-balck;
         margin-bottom: 100px;
-        position: relative;
-        font-family: 'gotham-medium-webfont', sans-serif;
     }
     &_wrap{
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        // flex-wrap: wrap;
-        gap: 10px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin-bottom: 60px;
-        a:hover{
-           span{
-               opacity: 1;
-           } 
+        width: 100%;
+        gap: 10px;
+        a:hover {
+            span {
+                opacity: 1;
+            }
         }
-
     }
     &_inner{
         width: calc(50%);
-        // max-width: 580px;
-        a{
+        a {
             position: relative;
             display: block;
             width: 100%;
-            span{
+            span {
                 -webkit-transition: all .3s;
                 -o-transition: all .3s;
                 transition: all .3s;
@@ -601,11 +612,11 @@ header{
                 display: -ms-flexbox;
                 display: flex;
                 -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
                 -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
                 width: 80px;
                 height: 80px;
                 color: $font-color-white;
@@ -615,11 +626,13 @@ header{
                 top: 50%;
                 left: 50%;
                 -webkit-transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
-                        transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
                 font-size: rem(18px);
                 font-family: 'gotham-medium-webfont', sans-serif;
-                &::before, &::after{
+
+                &::before,
+                &::after {
                     content: '';
                     position: absolute;
                     display: block;
@@ -628,32 +641,29 @@ header{
                     border-radius: 40px / 20px;
                     border: 1px solid currentColor;
                 }
-                &::after{
+
+                &::after {
                     -webkit-transform: rotate(90deg);
-                        -ms-transform: rotate(90deg);
-                            transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    transform: rotate(90deg);
                 }
             }
-
         }
         &_second{
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            // justify-content: space-around;
+            gap: 10px;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
-            gap: 10px;
-            width: calc(50%);
-            a{                
-                // max-width: 285px;
-                width: calc(48%);
-                position: relative;
-                
+            // justify-content: space-around;
+            a{
+                display: block;
+                width: calc(50% - 5px)
             }
         }
     }
-    .btn-see{
+    .btn-see {
         margin: 0 auto;
     }
 }
@@ -688,7 +698,6 @@ header{
 }
 
 footer{
-    // height: 524px;
     background: center center / cover no-repeat;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -736,7 +745,7 @@ footer{
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     top: -56%;
-    z-index: 1000;
+    z-index: 1;
     -webkit-box-shadow: 0 6px 50px 0 rgb(0 0 0 / 20%);
             box-shadow: 0 6px 50px 0 rgb(0 0 0 / 20%);
     &_title{
@@ -791,12 +800,24 @@ footer{
             color: $font-color-balck;
             font-family: 'GothamBook', sans-serif;
             font-size: rem(18px);
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+            &:hover{
+                color:#7e5aff;
+                svg{
+                    fill: $font-color-balck;
+                }
+            }
         }
         svg{
             width: 16px;
             height: 16px;
             fill: #7e5aff;
             margin-right: 5px;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
         }
     }
     .btn-submit{
@@ -838,10 +859,7 @@ footer{
                 flex-wrap: wrap;
         }
         &_inner{
-            width: 100%;
-            a{
-                width: calc(49%);
-            }
+            width: 100%; 
         }
     }
     
