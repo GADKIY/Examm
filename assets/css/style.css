@@ -24,6 +24,7 @@ img {
   object-fit: cover;
 }
 
+/* Мобильное меню и форму обратной связи я не успел сделать. С галереей у меня не получилось совсем */
 .container {
   width: 90%;
   max-width: 1170px;
@@ -47,6 +48,8 @@ img {
   background-color: #2c4058;
   top: -40px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -84,11 +87,17 @@ header {
   border-bottom: 1px solid #fff;
   top: 40%;
   left: 44%;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
 .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .links-item {
@@ -97,6 +106,8 @@ header {
   width: 40px;
   height: 40px;
   text-align: center;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   margin-right: 20px;
 }
@@ -112,19 +123,31 @@ header {
   height: 100%;
 }
 .links-item svg {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   fill: #fff;
+  -webkit-transform: translateY(60%);
+  -ms-transform: translateY(60%);
   transform: translateY(60%);
   width: 16px;
   height: 16px;
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .header_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .header_list-item {
@@ -182,9 +205,9 @@ header {
 
 .Header {
   background: #55b6fe;
-  background: -moz-linear-gradient(54deg, rgba(85, 182, 254, 0.6026785714) 7%, rgba(110, 153, 255, 0.5886729692) 50%, rgba(125, 92, 249, 0.6026785714) 100%);
-  background: -webkit-linear-gradient(54deg, rgba(85, 182, 254, 0.6026785714) 7%, rgba(110, 153, 255, 0.5886729692) 50%, rgba(125, 92, 249, 0.6026785714) 100%);
+  background: -o-linear-gradient(36deg, rgba(85, 182, 254, 0.6026785714) 7%, rgba(110, 153, 255, 0.5886729692) 50%, rgba(125, 92, 249, 0.6026785714) 100%);
   background: linear-gradient(54deg, rgba(85, 182, 254, 0.6026785714) 7%, rgba(110, 153, 255, 0.5886729692) 50%, rgba(125, 92, 249, 0.6026785714) 100%);
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
 
@@ -233,8 +256,13 @@ header {
   margin-bottom: 100px;
 }
 .projects_example {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-top: 70px;
 }
@@ -242,6 +270,9 @@ header {
   margin-bottom: 140px;
 }
 .projects_example.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   padding-top: 0;
 }
@@ -320,6 +351,8 @@ header {
   font-size: 0.875rem;
   line-height: 48px;
   color: #2c4058;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .btn:hover {
@@ -342,6 +375,8 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   opacity: 0.5;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .news_slide-controls:hover {
@@ -359,6 +394,8 @@ header {
   height: 5px;
   border-left: 1px solid rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 43%;
   left: 46%;
@@ -375,6 +412,8 @@ header {
   height: 5px;
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
   opacity: 0.5;
   top: 43%;
@@ -400,6 +439,8 @@ header {
   position: relative;
 }
 .news_list-item_link::after {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   position: absolute;
   content: "";
@@ -409,8 +450,8 @@ header {
   top: 0;
   opacity: 0;
   background: white;
-  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759) 87%);
-  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759) 87%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, rgba(255, 255, 255, 0)), color-stop(87%, rgba(0, 0, 0, 0.6306897759)));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759) 87%);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759) 87%);
 }
 .news_list-item_link:hover::after {
@@ -456,7 +497,11 @@ header {
   } */
 }
 .news_list-item-author-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: absolute;
   left: 22px;
@@ -487,6 +532,8 @@ header {
   position: absolute;
   top: 110%;
   left: 50%;
+  -webkit-transform: translateX(-50%) !important;
+  -ms-transform: translateX(-50%) !important;
   transform: translateX(-50%) !important;
 }
 .news .lSSlideOuter .lSPager.lSpg > li {
@@ -523,6 +570,8 @@ header {
   font-family: "gotham-medium-webfont", sans-serif;
 }
 .gallery_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
   margin-bottom: 60px;
@@ -539,10 +588,18 @@ header {
   width: 100%;
 }
 .gallery_inner a span {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 80px;
   height: 80px;
@@ -552,6 +609,8 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 1.125rem;
   font-family: "gotham-medium-webfont", sans-serif;
@@ -566,10 +625,15 @@ header {
   border: 1px solid currentColor;
 }
 .gallery_inner a span::after {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .gallery_inner_second {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 10px;
   width: calc(50%);
@@ -600,6 +664,8 @@ header {
   line-height: 300px;
   font-size: 24px;
   opacity: 0;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
   transition: all 0.1s;
   font-family: "GothamBook", sans-serif;
   text-transform: uppercase;
@@ -622,8 +688,13 @@ footer {
   width: 100%;
   max-width: 770px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .footer_copy {
@@ -646,17 +717,25 @@ footer {
   padding: 90px 60px 80px;
   position: absolute;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   top: -56%;
   z-index: 1000;
+  -webkit-box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.2);
 }
 .contact-card_title {
   margin-bottom: 56px;
 }
 .contact-card_info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .contact-card_list {
@@ -735,6 +814,7 @@ footer {
 }
 @media screen and (max-width: 850px) {
   .gallery_wrap {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .gallery_inner {
@@ -766,6 +846,9 @@ footer {
 }
 @media screen and (max-width: 760px) {
   .projects_example {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .projects_image-wrap {
@@ -784,6 +867,9 @@ footer {
     margin-bottom: 10px;
   }
   .contact-card_info-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .contact-card_list {
@@ -805,6 +891,8 @@ footer {
 
   .footer_wrapper {
     padding: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
