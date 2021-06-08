@@ -387,21 +387,24 @@ header{
             height: 240px;
             margin-bottom: 22px;
             position: relative;
-            
-
             &::after{
+                transition: all .2s;
                 position: absolute;
                 content: '';
                 width: 100%;
                 height: 100%;
                 left: 0;
                 top: 0;
+                opacity: 0;
                 background: rgb(255, 255, 255);
                 background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759103641) 87%);
                 background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759103641) 87%);
                 background: linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(0, 0, 0, 0.6306897759103641) 87%);
-                
-                
+            }
+            &:hover{
+                &::after{
+                    opacity: 1;
+                }
             }
         }
         &_text-wrap{
@@ -415,6 +418,9 @@ header{
             color: $font-color-balck;
             font-family: 'gothambold1', sans-serif;
             line-height: 30px;
+            &:hover{
+                color: $font-color-balck2;
+            }
         }
         &-description{
             height: 65px;
@@ -521,11 +527,52 @@ header{
         // flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 60px;
+        a:hover{
+           span{
+               opacity: 1;
+           } 
+        }
 
     }
     &_inner{
         width: calc(50%);
         // max-width: 580px;
+        a{
+            position: relative;
+            display: block;
+            width: 100%;
+            span{
+                transition: all .3s;
+                opacity: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                height: 80px;
+                color: $font-color-white;
+                border: 2px solid currentColor;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: rem(18px);
+                font-family: 'gotham-medium-webfont', sans-serif;
+                &::before, &::after{
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 80px;
+                    height: 40px;
+                    border-radius: 40px / 20px;
+                    border: 1px solid currentColor;
+                }
+                &::after{
+                    transform: rotate(90deg);
+                }
+            }
+
+        }
         &_second{
             display: flex;
             // justify-content: space-around;
@@ -535,6 +582,8 @@ header{
             a{                
                 // max-width: 285px;
                 width: calc(48%);
+                position: relative;
+                
             }
         }
     }
