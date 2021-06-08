@@ -676,6 +676,15 @@ footer {
   .hamburger {
     display: block;
   }
+
+  .news_slide-controls.prev {
+    top: 85%;
+    left: 1%;
+  }
+  .news_slide-controls.next {
+    top: 85%;
+    right: 1%;
+  }
 }
 @media screen and (max-width: 850px) {
   .gallery_wrap {
@@ -699,6 +708,13 @@ footer {
 @media screen and (max-width: 770px) {
   .contact-card {
     max-width: 100%;
+  }
+
+  .news_slide-controls.prev {
+    display: none;
+  }
+  .news_slide-controls.next {
+    display: none;
   }
 }
 @media screen and (max-width: 760px) {

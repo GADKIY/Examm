@@ -387,6 +387,8 @@ header{
             height: 240px;
             margin-bottom: 22px;
             position: relative;
+            
+
             &::after{
                 position: absolute;
                 content: '';
@@ -685,6 +687,18 @@ footer{
     .hamburger{
         display: block;
     }
+    .news{
+        &_slide-controls{
+            &.prev{
+                top: 85%;
+                left: 1%;
+            }
+            &.next{
+                top: 85%;
+                right: 1%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 850px){
@@ -716,6 +730,16 @@ footer{
 @media screen and (max-width: 770px){
     .contact-card{ 
         max-width: 100%;
+    }
+    .news{
+        &_slide-controls{
+            &.prev{
+                display: none;
+            }
+            &.next{
+                display: none;
+            }
+        }
     }
 }
 
