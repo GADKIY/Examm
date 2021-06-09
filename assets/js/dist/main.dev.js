@@ -106,9 +106,43 @@ $(function () {
     $('#mobile_shadow').toggleClass('open_shadow');
     $(".hamburger").toggleClass("is-active");
   });
+  /* $('.contact-card_form').on('submit', function(e){
+      e.preventDefault();
+      const textName = userName.value;
+      const userEmail = userMail.value;
+      const BOT_TOKEN = '1805815235:AAHhJ2ANt1NK959V7ZydmoGYllw7B9KQjVs';
+      const CHAT_ID = '-1001420667055';
+        function validMail(email){
+          let val_mail = /^[^\s@]+@[^\s@]+$/;
+          return val_mail.test(email);
+      }
+        if(textName !== '' && validMail(email)){
+          axios
+          .get('https://api.telegram.org/bot'+BOT_TOKEN+'/sendMessage?chat_id='+CHAT_ID+'&text='+'Name:'+ textName +'Email:'+ userEmail);
+          
+      } else{
+          alert("Hello");
+      }
+      
+  }); */
+
+  /* Сделать нормальную валидацию */
 });
 lightGallery(document.getElementById('lightgallery'), {
   selector: '.item',
   plugins: [lgZoom],
   speed: 500
 });
+/* function sendMessage(){
+    const textName = userName.value;
+    const userEmail = userMail.value;
+    const BOT_TOKEN = '1805815235:AAHhJ2ANt1NK959V7ZydmoGYllw7B9KQjVs';
+    const CHAT_ID = '-1001420667055';
+
+    if(textName !== '' && userEmail !== ''){
+        axios
+        .get('https://api.telegram.org/bot'+BOT_TOKEN+'/sendMessage?chat_id='+CHAT_ID+'&text='+'Name:'+ textName +'Email:'+ userEmail);
+    } 
+}
+
+sendUserInfo.addEventListener('click', sendMessage); */
