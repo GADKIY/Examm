@@ -106,10 +106,18 @@ $(function(){
         }
     });
 
-    $(".hamburger, #menu_shadow").on('click', function () {
+    $(".hamburger, #mobile_shadow").on('click', function () {
         $(".hamburger").toggleClass("is-active");
         $("body").toggleClass("open");
+        $('#mobile_shadow').toggleClass('open_shadow');
+        $('.mobile_menu').toggleClass('open_menu');
     });
+
+    $('.mobile_menu a, #menu_close').on('click', function(){
+        $('.mobile_menu').toggleClass('open_menu');
+        $('#mobile_shadow').toggleClass('open_shadow');
+        $(".hamburger").toggleClass("is-active");
+    })
 
     
 });
