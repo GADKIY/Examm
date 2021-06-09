@@ -501,17 +501,22 @@
                     </li>
                 </ul>
                 <form class="contact-card_form" action="#" method="POST" name="userInfo">
-                    <input type="text" placeholder="Your Name" id="userName">
-                    <input type="text" name="userMail" id="userMail" placeholder="Email">
+                    <input required type="text" placeholder="Your Name" id="userName">
+                    <input required type="text" name="userMail" id="userMail" placeholder="Email">
                     <button class="btn btn-submit" type="submit" id="sendUserInfo">SUBMIT</button>
                 </form>
+            </div>
+            <div class="contact-card_alert" id="error">
+                Please enter correct data
+            </div>
+            <div class="contact-card_alert" id="done">
+                Thank you=)
             </div>
         </div>
     </footer>
 
 
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/plugins/dist/lightgallery.min.js"></script>
     <script src="assets/js/plugins/dist/plugins/zoom/lg-zoom.min.js"></script>
@@ -519,6 +524,6 @@
     <script src="assets/js/plugins/intersection-observer.js"></script>
     <script src="assets/js/plugins/lazyload.js"></script>
     <script src="assets/js/plugins/lightslider.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.min.js"></script>
 </body>
 </html>
