@@ -902,6 +902,30 @@ footer {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+.contact-card_alert {
+  width: 300px;
+  height: 150px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: "GothamBook", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 70px;
+  backdrop-filter: blur(3px);
+}
+.contact-card_alert#error {
+  border: 2px solid #e91f29;
+  background: rgba(228, 62, 62, 0.4);
+  display: none;
+}
+.contact-card_alert#done {
+  border: 2px solid #1fe973;
+  background: rgba(68, 226, 139, 0.4);
+  display: none;
+}
 .contact-card .btn-submit {
   max-width: 140px;
   background: transparent;

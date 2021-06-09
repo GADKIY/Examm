@@ -923,6 +923,31 @@ footer{
             transition: all .3s;
         }
     }
+    &_alert{
+        width: 300px;
+        height: 150px;
+        border-radius: 4px;
+        text-align: center;
+        font-family: 'GothamBook', sans-serif;
+        text-transform: uppercase;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 70px;
+        backdrop-filter: blur(3px);
+        &#error{
+            border: 2px solid #e91f29;
+            background: rgba($color: rgb(228, 62, 62), $alpha: .4);
+            display: none;
+        }
+        &#done{
+            border: 2px solid #1fe973;
+            background: rgba($color: rgb(68, 226, 139), $alpha: .4);
+            display: none;
+        }
+        
+    }
     .btn-submit{
         max-width: 140px;
         background: transparent;
