@@ -44,9 +44,13 @@
     height: 100%;
     display: none;
     background: rgb(30,109,166);
+    background: -o-linear-gradient(320deg, rgba(30,109,166,0.3757878151260504) 3%, rgba(74,57,134,0.2665441176470589) 95%);
     background: linear-gradient(130deg, rgba(30,109,166,0.3757878151260504) 3%, rgba(74,57,134,0.2665441176470589) 95%);
-    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
     z-index: 1002;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
     transition: all .4s;
 }
 
@@ -66,18 +70,36 @@
     width: 90%;
     max-width: 320px;
     background: rgb(85,183,255);
+    background: -o-linear-gradient(320deg, rgba(85,183,255,0.8099614845938375) 13%, rgba(126,90,255,0.7987570028011204) 82%);
     background: linear-gradient(130deg, rgba(85,183,255,0.8099614845938375) 13%, rgba(126,90,255,0.7987570028011204) 82%);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 1003;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
     transition: all .4s;
     .header_list{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: 60%;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         &-item{
             a{
                 letter-spacing: 4px;
@@ -90,7 +112,9 @@
     width: 2px;
     height: 40px;
     background: $font-color-white;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     position: relative;
     cursor: pointer;
     &::after{
@@ -100,7 +124,9 @@
         display: block;
         width: 2px;
         height: 40px;
-        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
         background: $font-color-white;
 
 
@@ -784,7 +810,7 @@ footer{
 .footer{
     overflow: visible;
     &_wrapper{
-        width: 100%;
+        width: 90%;
         max-width: 770px;
         margin: 0 auto;
         display: -webkit-box;
